@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'iransans';
+    src: url(./fonts/IRANSans.ttf);
+    font-weight: 500;
+}
+
+:root {
+    --main-theme-1: #27374D;
+    --main-theme-2: #526D82;
+    --main-theme-3: #9DB2BF;
+    --main-theme-4: #DDE6ED;
+
+}
+body{
+    direction: rtl;
+    font-family: iransans;
+    color: var(--main-theme-1) !important;
+}
+
+a.active{
+    background-color: var(--main-theme-1) !important;
+    color: var(--main-theme-4) !important;
+}
+ 
+
+.swal2-confirm{
+    background-color: var(--main-theme-1);
+}
+

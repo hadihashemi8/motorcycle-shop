@@ -1,0 +1,17 @@
+.radio  span::after {
+  
+    content: "";
+    width:30px;
+    height:30px;
+    border: 2px solid #656565;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    display: block;
+}
+
+.radio input[type="radio"]:checked ~ span:after {
+    transform: translate(-50%, -50%) scale(1);
+}
